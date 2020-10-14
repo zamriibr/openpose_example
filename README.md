@@ -7,3 +7,11 @@
    b) http://posefs1.perception.cs.cmu.edu/OpenPose/models/pose/mpi/pose_iter_160000.caffemodel
 
 2. Sample video
+
+
+
+3. Note on docker 
+
+xhost +
+sudo docker run -it --rm --runtime nvidia --network host -v /tmp/.X11-unix:/tmp/.X11-unix -e DISPLAY=$DISPLAY -v /home/zamri/dockerfilehost:/location/in/container pytorch-opencv
+
