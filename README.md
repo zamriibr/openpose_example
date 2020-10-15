@@ -15,3 +15,6 @@
 xhost +
 sudo docker run -it --rm --runtime nvidia --network host -v /tmp/.X11-unix:/tmp/.X11-unix -e DISPLAY=$DISPLAY -v /home/zamri/dockerfilehost:/location/in/container pytorch-opencv
 
+or 
+
+sudo docker run -it --rm  --network host -v /tmp/.X11-unix:/tmp/.X11-unix -e DISPLAY=$DISPLAY -v /Users/zamri/dockerfiles:/location/in/container pytorch-opencv
